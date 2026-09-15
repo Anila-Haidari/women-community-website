@@ -182,6 +182,33 @@ button:hover {
     margin-bottom: 10px;
 }
 
+ /* How It Works */
+#how-it-works {
+    background-color: white;
+}
+
+.steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.step-card {
+    width: 30%;
+    min-width: 250px;
+    padding: 30px 20px;
+    background-color: #fff5f9;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.step-card h3 {
+    color: #9b4d72;
+    margin-bottom: 10px;
+}
+
 /* Contact */
 #contact {
     background-color: white;
@@ -306,5 +333,13 @@ form textarea {
 
 form button {
     width: 100%;
+}
+
+.steps-container {
+    width: 100%;
+}
+
+.step-card {
+    width: 90%;
 }
 }
