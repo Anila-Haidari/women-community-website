@@ -137,6 +137,29 @@ button:hover {
 #opportunities {
     background-color: #fff5f9;
 }
+.search-box {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #9b4d72;
+}
+
+.search-box button {
+    padding: 12px 20px;
+}
 
 .opportunity-container {
     display: flex;
@@ -245,5 +268,43 @@ nav a {
     .opportunity-card:hover {
     transform: translateY(-8px);
 }
+}
+
+section {
+    padding: 60px 5%;
+}
+
+section h2 {
+    font-size: 28px;
+}
+
+#home {
+    min-height: 70vh;
+}
+
+#home h1 {
+    font-size: 32px;
+}
+.search-box {
+    width: 90%;
+    flex-direction: column;
+}
+
+.search-box button {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    font-size: 15px;
+    padding: 12px;
+}
+
+form button {
+    width: 100%;
 }
 }
