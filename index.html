@@ -243,17 +243,17 @@
         Have an opportunity to share? Send us a message.
     </p>
 
-    <form>
-        <input type="text" placeholder="Your Name">
+    <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name">
 
-        <input type="email" placeholder="Your Email">
+    <input type="email" id="email" placeholder="Your Email">
 
-        <textarea placeholder="Your Message"></textarea>
+    <textarea id="message" placeholder="Your Message"></textarea>
 
-        <button type="button">
-            Send Message
-        </button>
-    </form>
+    <button type="button" id="sendButton">
+        Send Message
+    </button>
+</form>
 </section>
 
 
@@ -262,6 +262,25 @@
     <p>© 2026 Women Community. All Rights Reserved.</p>
 </footer>
 
+<script>
+    const form = document.getElementById("contactForm");
+    const sendButton = document.getElementById("sendButton");
+
+    sendButton.addEventListener("click", function () {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        if (name === "" || email === "" || message === "") {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        alert("Thank you! Your message has been sent.");
+
+        form.reset();
+    });
+</script>
 </body>
 </html>
 ```
