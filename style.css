@@ -1,278 +1,357 @@
- /* General */
+/* General */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
 
 html {
-    scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+color: #333;
+background-color: #fff;
 }
 
 /* Navigation */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    background-color: #f8e8f0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 8%;
+background-color: #f8e8f0;
+transition: 0.3s;
 }
 
 nav h2 {
-    color: #9b4d72;
+color: #9b4d72;
 }
 
 nav a {
-    text-decoration: none;
-    color: #333;
-    margin-left: 20px;
+text-decoration: none;
+color: #333;
+margin-left: 20px;
+transition: 0.3s;
 }
 
 nav a:hover {
-    color: #9b4d72;
+color: #9b4d72;
 }
 
 /* Sections */
 section {
-    padding: 80px 8%;
-    text-align: center;
+padding: 80px 8%;
+text-align: center;
 }
 
 section h2 {
-    font-size: 32px;
-    color: #7d3c5c;
-    margin-bottom: 15px;
+font-size: 32px;
+color: #7d3c5c;
+margin-bottom: 15px;
 }
 
 .section-text {
-    max-width: 600px;
-    margin: 0 auto 30px;
+max-width: 600px;
+margin: 0 auto 30px;
 }
 
+/* Hero Section */
 #home {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff5f9;
+min-height: 80vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #fff5f9;
 }
 
 #home h1 {
-    max-width: 700px;
-    font-size: 45px;
-    color: #7d3c5c;
-    margin-bottom: 20px;
+max-width: 700px;
+font-size: 45px;
+color: #7d3c5c;
+margin-bottom: 20px;
+
+
+/* Animation */
+animation: slideDown 1s ease;
+
+
 }
 
 #home p {
-    max-width: 600px;
-    margin-bottom: 30px;
+max-width: 600px;
+margin-bottom: 30px;
+
+
+animation: fadeIn 1.5s ease;
+
+
 }
 
 /* Button */
 button {
-    border: none;
-    padding: 12px 25px;
-    background-color: #9b4d72;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
+border: none;
+padding: 12px 25px;
+background-color: #9b4d72;
+color: white;
+border-radius: 6px;
+cursor: pointer;
+font-size: 16px;
+transition: 0.3s;
 }
+
 .main-button {
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 25px;
-    background-color: #9b4d72;
-    color: white;
-    border-radius: 6px;
-    font-size: 16px;
+display: inline-block;
+text-decoration: none;
+padding: 12px 25px;
+background-color: #9b4d72;
+color: white;
+border-radius: 6px;
+font-size: 16px;
+transition: 0.3s;
+animation: fadeIn 2s ease;
 }
+
 .card-button {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #9b4d72;
-    color: white;
-    border-radius: 6px;
-    font-size: 14px;
-    margin-top: 10px;
+display: inline-block;
+text-decoration: none;
+padding: 10px 20px;
+background-color: #9b4d72;
+color: white;
+border-radius: 6px;
+font-size: 14px;
+margin-top: 10px;
+transition: 0.3s;
 }
 
-.card-button:hover {
-    background-color: #7d3c5c;
-}
-.main-button:hover {
-    background-color: #7d3c5c;
-}
-
+.card-button:hover,
+.main-button:hover,
 button:hover {
-    background-color: #7d3c5c;
+background-color: #7d3c5c;
+transform: translateY(-3px);
 }
 
 /* About */
 #why-us {
-    background-color: #fff5f9;
+background-color: #fff5f9;
 }
 
 #why-us p {
-    max-width: 700px;
-    margin: 20px auto;
+max-width: 700px;
+margin: 20px auto;
 }
 
 #about p {
-    max-width: 700px;
-    margin: 20px auto;
+max-width: 700px;
+margin: 20px auto;
 }
 
 /* Opportunities */
 #opportunities {
-    background-color: #fff5f9;
+background-color: #fff5f9;
 }
+
 .search-box {
-    max-width: 600px;
-    margin: 30px auto;
-    display: flex;
-    gap: 10px;
+max-width: 600px;
+margin: 30px auto;
+display: flex;
+gap: 10px;
 }
 
 .search-box input {
-    flex: 1;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
+flex: 1;
+padding: 12px;
+border: 1px solid #ddd;
+border-radius: 6px;
+font-size: 16px;
+transition: 0.3s;
 }
 
 .search-box input:focus {
-    outline: none;
-    border-color: #9b4d72;
+outline: none;
+border-color: #9b4d72;
+box-shadow: 0 0 8px rgba(155, 77, 114, 0.2);
 }
 
 .search-box button {
-    padding: 12px 20px;
+padding: 12px 20px;
 }
 
 .opportunity-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 25px;
 }
 
 .opportunity-card {
-    width: 30%;
-    min-width: 250px;
-    padding: 30px 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+width: 30%;
+min-width: 250px;
+padding: 30px 20px;
+min-height: 230px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+/* Animation */
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
 }
+
+.opportunity-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 .opportunity-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    display: block;
+width: 100%;
+height: 160px;
+object-fit: cover;
+display: block;
+border-radius: 8px;
+transition: 0.4s;
+}
+
+.opportunity-card:hover img {
+transform: scale(1.03);
 }
 
 #opportunities h3 {
-    color: #9b4d72;
-    margin-bottom: 10px;
+color: #9b4d72;
+margin-bottom: 10px;
 }
 
- /* How It Works */
+/* How It Works */
 #how-it-works {
-    background-color: white;
+background-color: white;
 }
 
 .steps-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 25px;
+margin-top: 30px;
 }
 
 .step-card {
-    width: 30%;
-    min-width: 250px;
-    padding: 30px 20px;
-    background-color: #fff5f9;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+width: 30%;
+min-width: 250px;
+padding: 30px 20px;
+background-color: #fff5f9;
+border-radius: 10px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+transition: 0.3s;
+}
+
+.step-card:hover {
+transform: translateY(-8px);
 }
 
 .step-card h3 {
-    color: #9b4d72;
-    margin-bottom: 10px;
+color: #9b4d72;
+margin-bottom: 10px;
 }
 
 /* Contact */
 #contact {
-    background-color: white;
+background-color: white;
 }
 
 #contact h2 {
-    color: #7d3c5c;
-    margin-bottom: 15px;
+color: #7d3c5c;
+margin-bottom: 15px;
 }
 
 form {
-    max-width: 600px;
-    margin: 30px auto 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+max-width: 600px;
+margin: 30px auto 0;
+display: flex;
+flex-direction: column;
+gap: 15px;
 }
 
 form input,
 form textarea {
-    width: 100%;
-    padding: 14px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
+width: 100%;
+padding: 14px;
+border: 1px solid #ddd;
+border-radius: 6px;
+font-size: 16px;
+font-family: Arial, sans-serif;
+transition: 0.3s;
 }
 
 form input:focus,
 form textarea:focus {
-    outline: none;
-    border-color: #9b4d72;
+outline: none;
+border-color: #9b4d72;
+box-shadow: 0 0 8px rgba(155, 77, 114, 0.2);
 }
 
 form textarea {
-    height: 150px;
-    resize: vertical;
+height: 150px;
+resize: vertical;
 }
 
 form button {
-    align-self: center;
+align-self: center;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8e8f0;
+text-align: center;
+padding: 20px;
+background-color: #f8e8f0;
+}
+
+/* CSS Animations */
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+
+
+to {
+    opacity: 1;
+}
+
+
+}
+
+@keyframes slideDown {
+from {
+opacity: 0;
+transform: translateY(-30px);
+}
+
+
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 }
 
 /* Mobile */
 @media (max-width: 768px) {
 
-    nav {
-        flex-direction: column;
-        gap: 15px;
-    }
-    nav div {
+
+nav {
+    flex-direction: column;
+    gap: 15px;
+}
+
+nav div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -281,26 +360,6 @@ footer {
 
 nav a {
     margin: 0 5px;
-}
-
-    #home h1 {
-        font-size: 32px;
-    }
-
-    .opportunity-card {
-    width: 30%;
-    min-width: 250px;
-    padding: 30px 20px;
-    min-height: 230px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    .opportunity-card:hover {
-    transform: translateY(-8px);
-}
 }
 
 section {
@@ -318,6 +377,11 @@ section h2 {
 #home h1 {
     font-size: 32px;
 }
+
+.opportunity-card {
+    width: 90%;
+}
+
 .search-box {
     width: 90%;
     flex-direction: column;
@@ -348,4 +412,87 @@ form button {
 .step-card {
     width: 90%;
 }
+
+
+}
+/* Dark Mode Button */
+#darkModeButton {
+    margin-left: 20px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #9b4d72;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#darkModeButton:hover {
+    background-color: #7d3c5c;
+    transform: translateY(-3px);
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark-mode nav {
+    background-color: #333;
+}
+
+body.dark-mode nav a {
+    color: #eee;
+}
+
+body.dark-mode nav a:hover {
+    color: #f0a6c8;
+}
+
+body.dark-mode #home,
+body.dark-mode #why-us,
+body.dark-mode #opportunities {
+    background-color: #2b2b2b;
+}
+
+body.dark-mode #how-it-works,
+body.dark-mode #contact {
+    background-color: #222;
+}
+
+body.dark-mode h2,
+body.dark-mode #home h1 {
+    color: #f0a6c8;
+}
+
+body.dark-mode .opportunity-card {
+    background-color: #333;
+    color: #eee;
+}
+
+body.dark-mode .step-card {
+    background-color: #333;
+    color: #eee;
+}
+
+body.dark-mode .opportunity-card h3,
+body.dark-mode .step-card h3 {
+    color: #f0a6c8;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #ccc;
+}
+
+body.dark-mode footer {
+    background-color: #333;
 }
